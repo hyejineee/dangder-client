@@ -5,7 +5,7 @@ import LogoHeader from "./logo_header";
 import Navigation from "./navigation";
 import PageHeader from "./page_header";
 
-const SHOW_LOGO_HEADERS = ["/", `/[dogId]`];
+const SHOW_LOGO_HEADERS = ["/main", `/[dogId]`];
 
 // TODO: 채팅방 - 약속 설정에 페이지 타이틀 헤더 추가
 const SHOW_PAGE_HEADERS = [
@@ -17,15 +17,19 @@ const SHOW_PAGE_HEADERS = [
   "/profile/edit",
   "/settings",
   "/profile/[dogId]",
+  "/interests/chat/[roomId]",
+  "/review/write",
+  "/review/[dogId]",
 ];
 
 const SHOW_NAVIGATION = [
-  "/",
+  "/main",
   `/[dogId]`,
   "/today",
   "/chat",
   "/profile",
   "/profile/[dogId]",
+  "/interests",
 ];
 
 interface ILayoutProps {
@@ -41,6 +45,7 @@ const Wrapper = styled.div`
 
 const HeaderWrapper = styled.div`
   height: 4.5rem;
+  background-color: white;
 `;
 
 const ContentsWrapper = styled.div`
@@ -59,7 +64,7 @@ const TabWrapper = styled.div`
 // TODO: 불필요한 리렌더링 막기
 export default function Layout(props: ILayoutProps) {
   const router = useRouter();
-  console.log("Layout", router);
+
   const isShowLogoHeader = SHOW_LOGO_HEADERS.includes(router.pathname);
   const isShowPageHeader = SHOW_PAGE_HEADERS.includes(router.pathname);
   const isShowNavigation = SHOW_NAVIGATION.includes(router.pathname);

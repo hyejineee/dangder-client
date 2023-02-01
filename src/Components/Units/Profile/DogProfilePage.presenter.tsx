@@ -10,9 +10,13 @@ import { v4 as uuid } from "uuid";
 
 interface DogProfilePageUIProps {
   myDogData: IDog | undefined;
+  handleClickPassTicket: () => void;
 }
 
-export default function DogProfilePageUI({ myDogData }: DogProfilePageUIProps) {
+export default function DogProfilePageUI({
+  myDogData,
+  handleClickPassTicket,
+}: DogProfilePageUIProps) {
   const router = useRouter();
   const settings = {
     dots: false,
@@ -33,7 +37,7 @@ export default function DogProfilePageUI({ myDogData }: DogProfilePageUIProps) {
       <S.DogProfileWrapper>
         <S.DogProfile
           id={myDogData?.id}
-          onClick={onClickMyProfile(myDogData?.id)}
+          onClick={onClickMyProfile(myDogData?.id || "")}
         >
           <S.DogProfileImageWrapper>
             <Slider
@@ -62,11 +66,28 @@ export default function DogProfilePageUI({ myDogData }: DogProfilePageUIProps) {
           </S.DogInfo>
         </S.DogProfile>
         <S.ProfileEditButtonWrapper>
-          <div onClick={() => {}}>
+          <Link href={"/profile/edit"}>
             <S.ProfileEditButton>수정</S.ProfileEditButton>
-          </div>
+          </Link>
         </S.ProfileEditButtonWrapper>
       </S.DogProfileWrapper>
+
+      <S.SettingWrapper onClick={handleClickPassTicket}>
+        <S.DogPassSetting>
+          <S.SettingSpan>댕더패스</S.SettingSpan>
+          <S.RightArrowIcon />
+        </S.DogPassSetting>
+      </S.SettingWrapper>
+
+      <S.SettingWrapper>
+        <Link href={`/review/${myDogData?.id || ""}`}>
+          <S.DogProfileSetting>
+            <S.SettingSpan>내가 받은 매칭 후기</S.SettingSpan>
+            <S.RightArrowIcon />
+          </S.DogProfileSetting>
+        </Link>
+      </S.SettingWrapper>
+
       <S.SettingWrapper>
         <Link href="/settings">
           <S.DogProfileSetting>

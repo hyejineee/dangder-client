@@ -35,6 +35,8 @@ export default function ApolloSetting(props: IApolloSettingProps) {
 
   useEffect(() => {
     if (router.asPath.includes("auth")) return;
+    if (!userInfo) return; 
+
     restoreToken.toPromise().then((newAccessToken) => {
       if (!newAccessToken) {
         setUserInfo(undefined);
@@ -43,11 +45,10 @@ export default function ApolloSetting(props: IApolloSettingProps) {
     });
   }, []);
 
-  useEffect(() => {
-    console.log("userInfo", userInfo);
-  }, [userInfo]);
 
   const errorLink = onError(({ graphQLErrors, operation, forward }) => {
+
+    if (!userInfo) return; 
     // 1-1. 에러를 캐치
     if (graphQLErrors) {
       for (const err of graphQLErrors) {

@@ -18,7 +18,7 @@ import {
   IMutationVerifyMailTokenArgs,
   IQuery,
 } from "../../../../Commons/Types/Generated/types";
-import { emailSchema } from "./Page/EmailInputPage";
+
 import SignUpUI from "./SignUp.presenter";
 import {
   CREATE_MAIL_TOKEN,
@@ -30,7 +30,6 @@ import * as yup from "yup";
 import LoadingModal from "../../../Commons/Modal/Loading/LoadingModal";
 import {
   CREATE_DOG,
-  FETCH_AVOID_BREEDS,
   FETCH_CHARACTERS,
   FETCH_INTERESTS,
   GET_DOG_INFO,
@@ -56,10 +55,7 @@ export default function SignUpContainer() {
     useQuery<Pick<IQuery, "fetchCharacters">>(FETCH_CHARACTERS);
 
   const { data: interestsData } =
-    useQuery<Pick<IQuery, "fetchInterests">>(FETCH_INTERESTS);
-
-  const { data: avoidBreedsData } =
-    useQuery<Pick<IQuery, "fetchAvoidBreeds">>(FETCH_AVOID_BREEDS);
+    useQuery<Pick<IQuery, "fetchInterestCategory">>(FETCH_INTERESTS);
 
   const [createMailToken] = useMutation<
     Pick<IMutation, "createMailToken">,
@@ -152,7 +148,6 @@ export default function SignUpContainer() {
       if (!data?.verifyMailToken) throw Error("인증번호가 일치하지 않습니다.");
       handleNextPage();
     } catch (e) {
-      console.log("verifyMailTokenError", e);
       if (e instanceof Error) {
         setExceptionModal({ visible: true, message: e.message });
       }
@@ -173,7 +168,6 @@ export default function SignUpContainer() {
   };
 
   const handleCheckDogRegisterNumber = async () => {
-    console.log("handleCheckDog");
     if (
       !yup
         .string()
@@ -212,7 +206,6 @@ export default function SignUpContainer() {
 
       handleNextPage();
     } catch (e) {
-      console.log("handleCheckDogRegister", e);
       setExceptionModal({
         visible: true,
         message: "댕댕이를 찾을 수 없습니다.<br/> 입력한 정보를 확인해주세요.",
@@ -269,7 +262,7 @@ export default function SignUpContainer() {
             description: dogInfoInputs.introduce,
             interests: dogInfoInputs.interests,
             characters: dogInfoInputs.characters,
-            avoidBreeds: dogInfoInputs.avoid,
+
             locations: {
               lat: geo.latitude || 0,
               lng: geo.longitude || 0,
@@ -316,7 +309,6 @@ export default function SignUpContainer() {
       introduce: "",
       characters: [],
       interests: [],
-      avoid: [],
     });
 
     setRegNumInputs({
@@ -341,7 +333,7 @@ export default function SignUpContainer() {
         handleCreateUserAndDog={handleCreateUserAndDog}
         charactersData={charactersData}
         interestsData={interestsData}
-        avoidBreedsData={avoidBreedsData}
+        
       />
     </>
   );

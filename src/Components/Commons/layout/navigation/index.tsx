@@ -11,17 +11,13 @@ export default function Navigation() {
   const router = useRouter();
   const menus = ["오늘의 댕댕이", "메인", "채팅", "마이 댕댕이"];
   const urls = ["/today.svg", "/main.svg", "/chat.svg", "/mypage.svg"];
-  const links = ["/today/", "/", "/chat/", "/profile/"];
+  const links = ["/today/", "/main", "/chat/", "/profile/"];
 
   const [isActive, setActive] = useState(links.indexOf(router.asPath));
 
   useEffect(() => {
     setActive(links.indexOf(router.asPath));
   }, [router]);
-
-  useEffect(() => {
-    console.log("nav - active menu", isActive);
-  }, [isActive]);
 
   const onClickToggle =
     (activeIndex: number) => (event: MouseEvent<HTMLDivElement>) => {

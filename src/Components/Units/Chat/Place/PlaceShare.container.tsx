@@ -1,11 +1,10 @@
 import { useState } from "react";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
-
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import LargeButton from "../../../Commons/Button/LargeButton";
 import Map from "../../../Commons/Map/Map";
 
 import * as S from "./PlaceShare.styles";
-
 
 interface PlaceShareContainerProps {
   handleEmitSend: (payload: { type: string; data: any }) => void;
@@ -21,7 +20,6 @@ export default function PlaceShareContainer({
   >();
 
   const onClickPlaceShare = () => {
-    console.log("onClickPlaceShare");
     handleEmitSend({
       type: "place",
       data: position,
@@ -30,16 +28,14 @@ export default function PlaceShareContainer({
   };
 
   const onChangeMarker = ({ lat, lng }: { lat: number; lng: number }) => {
-    console.log("onChangeMarker", lat, lng);
     setPosition({ lat, lng });
   };
 
   const getCurrentPosition = () => {
-    console.log("getCurrentPosition");
+    
     if (!navigator.geolocation) return;
 
     navigator.geolocation.getCurrentPosition((position) => {
-      console.log("getCurrentPosition", position);
       setPosition({
         lat: position.coords.latitude,
         lng: position.coords.longitude,
@@ -49,6 +45,13 @@ export default function PlaceShareContainer({
 
   return (
     <S.PlaceWrapper>
+      <S.Header>
+        <ArrowBackRoundedIcon
+          onClick={() => {
+            toggleModal();
+          }}
+        />
+      </S.Header>
       <Map onChangeMarker={onChangeMarker} position={position} />
 
       <S.ButtonsWrapper>

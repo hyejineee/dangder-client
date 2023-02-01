@@ -1,23 +1,18 @@
-import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { dogInfoInputState } from "../../../../../Commons/Store/Auth/SignUpState";
-import { profileInputState } from "../../../../../Commons/Store/Profile/ProfileInitState";
 import {
-  IAvoidBreed,
   ICharacter,
-  IInterest,
+  IInterestCategoryOutput,
 } from "../../../../../Commons/Types/Generated/types";
-import * as S from "../../../Profile/Init/Page/Page.styles";
+import * as S from "./Page.styles";
 
 interface ProfileInput2PageProps {
   characters: ICharacter[] | undefined;
-  interests: IInterest[] | undefined;
-  avoidBreeds: IAvoidBreed[] | undefined;
+  interests: IInterestCategoryOutput[] | undefined;
 }
 export default function ProfileInput2Page({
   characters,
   interests,
-  avoidBreeds,
 }: ProfileInput2PageProps) {
   const [inputs, setInputs] = useRecoilState(dogInfoInputState);
 
@@ -68,21 +63,6 @@ export default function ProfileInput2Page({
             onClick={onClickValue("interests", e.interest)}
           >
             {e.interest}
-          </S.Tag>
-        ))}
-      </S.TagWrapper>
-
-      <S.SubTitleWrapper style={{ marginTop: "2.5rem" }}>
-        우리 댕댕이가 무서워하는 견종을 선택해주세요.
-      </S.SubTitleWrapper>
-      <S.TagWrapper>
-        {(avoidBreeds || []).map((e: IAvoidBreed, i) => (
-          <S.Tag
-            key={i}
-            isSelected={inputs.avoid.includes(e.avoidBreed)}
-            onClick={onClickValue("avoid", e.avoidBreed)}
-          >
-            {e.avoidBreed}
           </S.Tag>
         ))}
       </S.TagWrapper>
