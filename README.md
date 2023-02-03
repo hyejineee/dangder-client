@@ -29,7 +29,7 @@
 
 팀원들이 내부 레이아웃 및 기능을 구성하는 것 외에 외부 dim 처리, 위치나 모양, 열리고 닫히는 것에 신경을 덜 쓸 수 있도록 CustomLayoutModal 컴포넌트를 구현하고 props를 통해 팀원들이 구성한 엘리먼트를 자식 엘리먼트로 받아 모달을 띄울 수 있도록 했습니다. 이를 통해 프론트엔드 개발자로서 사용자의 입장에서 생각하여 개발하는 자세를 배우게 되었습니다. 
 
-https://github.com/dang-der/dangder-client/blob/e80caf4d4e956373bb161a56b016ad867ba20012/src/Components/Commons/Modal/CustomLayoutModal/CustomLayoutModal.tsx#L48-L76
+https://github.com/hyejineee/dangder-client/blob/7d6de736edf004aa8f33cbabd6bef77284a6131a/src/Components/Commons/Modal/CustomLayoutModal/CustomLayoutModal.tsx#L48-L76
 
 
 
@@ -51,8 +51,7 @@ https://github.com/dang-der/dangder-client/blob/e80caf4d4e956373bb161a56b016ad86
 
 ## 기술 스택 <a id="3"></a>
 
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" > <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white" > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" > <img src="https://img.shields.io/badge/emotion-FE5196?style=for-the-badge&components&logoColor=white" >  <img src="https://img.shields.io/badge/Apollo GraphQL
--311C87?style=for-the-badge&logo=Apollo GraphQL&logoColor=white" > <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=GraphQL&logoColor=white" > <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=Socket.io&logoColor=white" >  <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=for-the-badge&logo=Amazon EC2&logoColor=white" > <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white" >
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white" > <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white" > <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" > <img src="https://img.shields.io/badge/emotion-FE5196?style=for-the-badge&components&logoColor=white" >  <img src="https://img.shields.io/badge/Apollo GraphQL-311C87?style=for-the-badge&logo=Apollo GraphQL&logoColor=white" > <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=GraphQL&logoColor=white" > <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=Socket.io&logoColor=white" >  <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=for-the-badge&logo=Amazon EC2&logoColor=white" > <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white" >
 
 ## 실행 방법 <a id="4"></a>
 **API 서버 운영 중단으로 기능이 정상적으로 동작하지 않을 수 있습니다.**
