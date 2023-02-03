@@ -43,6 +43,43 @@ https://github.com/hyejineee/dangder-client/blob/7d6de736edf004aa8f33cbabd6bef77
 
 이를 통해 프론트엔드 개발자와 백엔드 개발자가 서로 데이터를 바라보는 시각이 다르다는 것을 배우게 되었고, 백엔드와 소통할 때 어디까지 생각해야 하는지 배울 수 있는 시간이 되었습니다.
 
+### 스크린샷
+<details>
+  <summary>매칭 성공 모달</summary>
+    <div markdown="1">
+       <img src= "https://user-images.githubusercontent.com/104765779/211010695-f67fa9f4-2421-4662-aa48-54dab8bd7411.gif"/>
+    </div>
+</details>
+
+<details>
+  <summary>댕더 패스권 구매</summary>
+    <div markdown="1">
+       <img src= "https://user-images.githubusercontent.com/104765779/211010773-ef7ad14c-88ab-4614-9207-5d532469b4bf.gif"/>
+    </div>
+</details>
+
+<details>
+  <summary>매칭 후기</summary>
+    <div markdown="1">
+      <img src= "https://user-images.githubusercontent.com/104765779/211010550-9b0f520d-ea55-4c6c-a95a-b74d764e2d71.gif"/>
+    </div>
+</details>
+
+
+<details>
+  <summary>채팅</summary>
+    <div markdown="1">
+       <img src= "https://user-images.githubusercontent.com/104765779/211010927-905d4bfc-5f48-42d6-88d5-b171ae17f3fa.gif"/>
+    </div>
+</details>
+
+<details>
+  <summary>관심사 그룹 채팅</summary>
+    <div markdown="1">
+       <img src= "https://user-images.githubusercontent.com/104765779/211010842-75667d68-16fe-4c9f-ad31-fea22962b0ca.gif"/>
+    </div>
+</details>
+
 ## 회고 <a id="2"></a>
 
 프론트엔드 개발자로서 처음 진행한 팀 프로젝트이기 때문에 처음에 잘 할 수 있을까. 백엔드와 잘 소통할 수 있을까에 대한 걱정이 앞섰습니다. 디자이너나 기획자도 없이 저희끼리 처음부터 끝까지 구현해야 했기 때문에 큰 부담으로 다가왔습니다. 하지만 이전에 안드로이드 개발자로서 아르바이트를 했던 경험과 산업디자인과 학부생때 서비스를 기획하고 디자인 했던 경험이 많은 도움이 되었습니다. 
