@@ -54,8 +54,8 @@ https://github.com/hyejineee/dangder-client/blob/7d6de736edf004aa8f33cbabd6bef77
 <details>
   <summary>댕더 패스권 구매</summary>
     <div markdown="2" style="display : flex; gap : 8px">
-       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EB%8C%95%EB%8D%94%ED%8C%A8%EC%8A%A4%20%EA%B5%AC%EB%A7%A41.gif?raw=true" style="flex:1; width : 50%"/>
-    <img src="https://github.com/hyejineee/dangder-client/blob/master/images/%EB%8C%95%EB%8D%94%ED%8C%A8%EC%8A%A4%20%EA%B5%AC%EB%A7%A42.gif?raw=true" style="flex:1; width : 50%"/>
+       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EB%8C%95%EB%8D%94%ED%8C%A8%EC%8A%A4%20%EA%B5%AC%EB%A7%A41.gif?raw=true" style="flex:1; width : 45%"/>
+    <img src="https://github.com/hyejineee/dangder-client/blob/master/images/%EB%8C%95%EB%8D%94%ED%8C%A8%EC%8A%A4%20%EA%B5%AC%EB%A7%A42.gif?raw=true" style="flex:1; width : 45%"/>
     </div>
 </details>
 
@@ -77,8 +77,8 @@ https://github.com/hyejineee/dangder-client/blob/7d6de736edf004aa8f33cbabd6bef77
 <details>
   <summary>관심사 그룹 채팅</summary>
     <div markdown="1" style="display:flex; gap:8px">
-       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85.gif?raw=true" style="width : 50%; flex:1"/>
-        <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85%205%EB%B6%84%20%EC%8B%9C%EA%B0%84%EC%A0%9C%ED%95%9C.gif?raw=true" style="width : 50%; flex:1"/>
+       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85.gif?raw=true" style="width : 45%; flex:1"/>
+        <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85%205%EB%B6%84%20%EC%8B%9C%EA%B0%84%EC%A0%9C%ED%95%9C.gif?raw=true" style="width : 45%; flex:1"/>
     </div>
 </details>
 
