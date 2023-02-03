@@ -46,22 +46,23 @@ https://github.com/hyejineee/dangder-client/blob/7d6de736edf004aa8f33cbabd6bef77
 ### 스크린샷
 <details>
   <summary>매칭 성공 모달</summary>
-    <div markdown="1">
-       <img src= "https://user-images.githubusercontent.com/104765779/211010695-f67fa9f4-2421-4662-aa48-54dab8bd7411.gif"/>
+    <div markdown="1" style="display : flex;">
+       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EB%A7%A4%EC%B9%AD%ED%99%94%EB%A9%B4.gif?raw=true" style="width : 50%"/>
     </div>
 </details>
 
 <details>
   <summary>댕더 패스권 구매</summary>
-    <div markdown="1">
-       <img src= "https://user-images.githubusercontent.com/104765779/211010773-ef7ad14c-88ab-4614-9207-5d532469b4bf.gif"/>
+    <div markdown="2" style="display : flex; gap : 8px">
+       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EB%8C%95%EB%8D%94%ED%8C%A8%EC%8A%A4%20%EA%B5%AC%EB%A7%A41.gif?raw=true" style="flex:1; width : 50%"/>
+    <img src="https://github.com/hyejineee/dangder-client/blob/master/images/%EB%8C%95%EB%8D%94%ED%8C%A8%EC%8A%A4%20%EA%B5%AC%EB%A7%A42.gif?raw=true" style="flex:1; width : 50%"/>
     </div>
 </details>
 
 <details>
   <summary>매칭 후기</summary>
     <div markdown="1">
-      <img src= "https://user-images.githubusercontent.com/104765779/211010550-9b0f520d-ea55-4c6c-a95a-b74d764e2d71.gif"/>
+      <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EB%A6%AC%EB%B7%B0%20%EB%82%A8%EA%B8%B0%EA%B8%B0.gif?raw=true" style="width : 50%"/>
     </div>
 </details>
 
@@ -69,14 +70,15 @@ https://github.com/hyejineee/dangder-client/blob/7d6de736edf004aa8f33cbabd6bef77
 <details>
   <summary>채팅</summary>
     <div markdown="1">
-       <img src= "https://user-images.githubusercontent.com/104765779/211010927-905d4bfc-5f48-42d6-88d5-b171ae17f3fa.gif"/>
+       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EC%B1%84%ED%8C%85%ED%99%94%EB%A9%B4.gif?raw=true" style="width : 50%"/>
     </div>
 </details>
 
 <details>
   <summary>관심사 그룹 채팅</summary>
-    <div markdown="1">
-       <img src= "https://user-images.githubusercontent.com/104765779/211010842-75667d68-16fe-4c9f-ad31-fea22962b0ca.gif"/>
+    <div markdown="1" style="display:flex; gap:8px">
+       <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85.gif?raw=true" style="width : 50%; flex:1"/>
+        <img src= "https://github.com/hyejineee/dangder-client/blob/master/images/%EA%B7%B8%EB%A3%B9%EC%B1%84%ED%8C%85%205%EB%B6%84%20%EC%8B%9C%EA%B0%84%EC%A0%9C%ED%95%9C.gif?raw=true" style="width : 50%; flex:1"/>
     </div>
 </details>
 
